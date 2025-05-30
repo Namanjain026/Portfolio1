@@ -211,6 +211,43 @@ nav ul li a:hover {
 .leftsection {
   font-size: 2.7rem;
 }
+
+.leftsection .buttons {
+  padding: 8px 0;
+}
+.leftsection .btn2 {
+  padding: 12px;
+  background-color: rgb(2, 2, 42);
+  color: aliceblue;
+  border-color: aliceblue;
+  border-radius: 6px;
+  font-size: 16px;
+}
+.leftsection .btn2:hover {
+  padding: 12.3px;
+  background-color: rgb(18, 67, 86);
+  color: aliceblue;
+  border-color: aliceblue;
+  border-radius: 6px;
+  font-size: 16px;
+}
+.leftsection .btn1 {
+  padding: 12px;
+  background-color: rgb(18, 67, 86);
+  color: aliceblue;
+  border-color: aliceblue;
+  border-radius: 6px;
+  font-size: 16px;
+}
+.leftsection .btn1:hover {
+  padding: 12.3px;
+  background-color: rgb(2, 2, 42);
+  color: aliceblue;
+  border-color: aliceblue;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
 .rightsection img {
   width: 80%;
 }
