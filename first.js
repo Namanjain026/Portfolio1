@@ -6,5 +6,6 @@ var typed = new Typed("#element", {
     // "MERN Stack Developer",
   ],
   typeSpeed: 100,
+  backSpeed: 50,
   loop: true,
 });
