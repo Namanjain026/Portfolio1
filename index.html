@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naman Jain - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="first.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(2, 2, 42);
+        color: aliceblue;
+        font-family: "Poppins", sans-serif;
+      }
+      nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 60px;
+        background-color: rgb(18, 21, 46);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 24px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: aliceblue;
+      }
+      nav ul li a:hover {
+        color: rgb(78, 194, 194);
+        font-size: 1.02rem;
+      }
+      .left {
+        font-size: 1.2rem;
+      }
+      .firstsection {
+        padding-top: 80px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 120px 10px;
+      }
+      .firstsection > div {
+        width: 80%;
+        margin: 0 120px;
+      }
+      .leftsection {
+        font-size: 2.7rem;
+        /* margin: 0 60px; */
+      }
+      .rightsection img {
+        width: 80%;
+      }
+
+      .teal {
+        color: rgb(39, 175, 175);
+      }
+
+      #element {
+        color: rgb(39, 175, 175);
+      }
+      .secondsection {
+        max-width: 80vw;
+        margin: auto;
+        padding-bottom: 320px;
+      }
+      .secondsection h1 {
+        font-size: 1.9rem;
+        padding-bottom: 80px;
+      }
+      .secondsection .box {
+        background-color: aliceblue;
+        width: 80vw;
+        height: 2px;
+        margin: 46px 40px;
+        display: flex;
+      }
+
+      .secondsection .vertical {
+        background-color: aliceblue;
+        height: 80px;
+        width: 2px;
+        margin: 0 190px;
+      }
+
+      .vertical-title {
+        position: relative;
+        top: 5px;
+        width: 220px;
+        font-size: 16px;
+      }
+      .vertical-title2 {
+        position: relative;
+        top: 37px;
+        width: 220px;
+        font-size: 16px;
+      }
+      .vertical-title3 {
+        position: relative;
+        top: 5px;
+        width: 200px;
+        font-size: 16px;
+      }
+      .vertical-desc {
+        position: relative;
+        top: 20px;
+        width: 220px;
+        font-size: 12px;
+      }
+      .vertical-desc2 {
+        position: relative;
+        top: 51px;
+        width: 220px;
+        font-size: 12px;
+      }
+      .vertical-desc3 {
+        position: relative;
+        top: 20px;
+        width: 220px;
+        font-size: 12px;
+      }
+      .image-top {
+        width: 90px;
+        position: relative;
+        top: -75px;
+        left: -44px;
+      }
+      .image-top1 {
+        width: 70px;
+        position: relative;
+        top: -62px;
+        left: -36px;
+      }
+      .image-top2 {
+        width: 90px;
+        position: relative;
+        top: -75px;
+        left: -44px;
+      }
+      .main-content {
+        padding-bottom: 500px;
+      }
+      footer {
+        background-color: rgb(18, 21, 46);
+        height: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Naman's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home </a></li>
+            <li><a href="/">About </a></li>
+            <li><a href="/">Projects </a></li>
+            <li><a href="/">Skills </a></li>
+            <li><a href="/">Contact Me </a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          Hi, I am <span class="teal">Naman Jain!</span>
+          <div>and i'm a</div>
+          <span id="element"></span>
+        </div>
+        <div class="rightsection">
+          <img src="d1.png" alt="" />
+        </div>
+      </section>
+
+      <section class="secondsection">
+        <h1>Education</h1>
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="high1.png" alt="" />
+            <div class="vertical-title">
+              CBSE Xth (2020) Maheshwari Public School
+            </div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+              culpa nemo magnam enim reprehenderit eos ab tenetur obcaecati quo,
+              ratione corrupti ex animi sed, in placeat unde repellendus.
+              Ducimus, iusto.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top1" src="high2.png" alt="" />
+            <div class="vertical-title2">
+              CBSE XIIth (2022) Maheshwari Public School
+            </div>
+            <div class="vertical-desc2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+              culpa nemo magnam enim reprehenderit eos ab tenetur obcaecati quo,
+              ratione corrupti ex animi sed, in placeat unde repellendus.
+              Ducimus, iusto.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top2" src="university.png" alt="" />
+            <div class="vertical-title3">
+              BTech CSE (2022-2026) JK Lakshmipat University
+            </div>
+            <div class="vertical-desc3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+              culpa nemo magnam enim reprehenderit eos ab tenetur obcaecati quo,
+              ratione corrupti ex animi sed, in placeat unde repellendus.
+              Ducimus, iusto.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="flex">
+        <div class="footer-first"></div>
+        <div class="footer-second"></div>
+        <div class="footer-third"></div>
+        <div class="footer-fourth"></div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="first.js"></script>
+  </body>
+</html>
