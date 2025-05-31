@@ -11,195 +11,6 @@
       rel="stylesheet"
     />
     <link href="first.css" rel="stylesheet" />
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      html,
-      body {
-        overflow-x: hidden;
-      }
-      body {
-        background-color: rgb(2, 2, 42);
-        color: aliceblue;
-        font-family: "Poppins", sans-serif;
-      }
-      nav {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 1000;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 60px;
-        background-color: rgb(18, 21, 46);
-      }
-      nav ul {
-        display: flex;
-        justify-content: center;
-      }
-      nav ul li {
-        list-style: none;
-        margin: 0 24px;
-      }
-      nav ul li a {
-        text-decoration: none;
-        color: aliceblue;
-      }
-      nav ul li a:hover {
-        color: rgb(78, 194, 194);
-        font-size: 1.02rem;
-      }
-      .left {
-        font-size: 1.2rem;
-      }
-      .firstsection {
-        padding-top: 80px;
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin: 120px 10px;
-      }
-      .firstsection > div {
-        width: 80%;
-        margin: 0 120px;
-      }
-      .leftsection {
-        font-size: 2.7rem;
-      }
-
-      .leftsection .buttons {
-        padding: 8px 0;
-      }
-      .leftsection .btn2 {
-        padding: 12px;
-        background-color: rgb(2, 2, 42);
-        color: aliceblue;
-        border-color: aliceblue;
-        border-radius: 6px;
-        font-size: 16px;
-      }
-      .leftsection .btn2:hover {
-        padding: 12.3px;
-        background-color: rgb(18, 67, 86);
-        color: aliceblue;
-        border-color: aliceblue;
-        border-radius: 6px;
-        font-size: 16px;
-      }
-      .leftsection .btn1 {
-        padding: 12px;
-        background-color: rgb(18, 67, 86);
-        color: aliceblue;
-        border-color: aliceblue;
-        border-radius: 6px;
-        font-size: 16px;
-      }
-      .leftsection .btn1:hover {
-        padding: 12.3px;
-        background-color: rgb(2, 2, 42);
-        color: aliceblue;
-        border-color: aliceblue;
-        border-radius: 6px;
-        font-size: 16px;
-      }
-
-      .rightsection img {
-        width: 80%;
-      }
-
-      .teal {
-        color: rgb(39, 175, 175);
-      }
-
-      #element {
-        color: rgb(39, 175, 175);
-      }
-
-      .secondsection {
-        max-width: 80vw;
-        margin: auto;
-        padding-bottom: 320px;
-      }
-
-      .secondsection h1 {
-        font-size: 1.9rem;
-        padding-bottom: 80px;
-        text-align: center;
-      }
-
-      .secondsection .box {
-        background-color: aliceblue;
-        width: 80vw;
-        height: 2px;
-        margin: 46px 0;
-        display: flex;
-        justify-content: space-between;
-      }
-
-      .vertical {
-        background-color: aliceblue;
-        height: 80px;
-        width: 2px;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .image-top {
-        width: 80px;
-        position: relative;
-        top: -75px;
-      }
-
-      .vertical-box {
-        background-color: rgb(18, 21, 46);
-        border-radius: 12px;
-        padding: 12px;
-        margin-top: -50px;
-        width: 240px;
-        text-align: center;
-      }
-      .vertical-box:hover {
-        background-color: rgb(24, 103, 103);
-        border-radius: 12px;
-        padding: 12px;
-        margin-top: -50px;
-        width: 240px;
-        text-align: center;
-      }
-
-      .vertical-title {
-        font-size: 16px;
-        margin-bottom: 6px;
-      }
-
-      .vertical-desc {
-        font-size: 12px;
-      }
-
-      .main-content {
-        padding-bottom: 500px;
-      }
-
-      footer {
-        background-color: rgb(18, 21, 46);
-        height: 80px;
-      }
-
-      .footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-      }
-    </style>
   </head>
   <body>
     <header>
@@ -207,10 +18,10 @@
         <div class="left">Naman's Portfolio</div>
         <div class="right">
           <ul>
-            <li><a href="/">Home </a></li>
-            <li><a href="/">About </a></li>
+            <li><a href="/" class="home">Home </a></li>
+            <li><a href="#Education">About </a></li>
             <li><a href="/">Projects </a></li>
-            <li><a href="/">Skills </a></li>
+            <li><a href="#Skills">Skills </a></li>
             <li><a href="/">Contact Me </a></li>
           </ul>
         </div>
@@ -233,48 +44,101 @@
         </div>
       </section>
 
-      <section class="secondsection">
-        <h1>Education</h1>
-        <div class="box">
-          <div class="vertical">
-            <img class="image-top" src="high1.png" alt="" />
-            <div class="vertical-box">
-              <div class="vertical-title">
-                CBSE Xth (2020) Maheshwari Public School
-              </div>
-              <div class="vertical-desc">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est,
-                culpa nemo magnam enim reprehenderit eos ab tenetur obcaecati
-                quo.
-              </div>
+      <section class="education" id="Education">
+        <h1 class="heading">Education</h1>
+        <div class="timeline-items">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2022-26</div>
+            <div class="timeline-content">
+              <h3>BTech CSE</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Reiciendis voluptatum amet ex, voluptate, maxime sint explicabo
+                nesciunt, voluptas ut quaerat earum. Voluptas, ratione commodi?
+                Iure magnam nobis natus exercitationem ipsam.
+              </p>
             </div>
           </div>
 
-          <div class="vertical">
-            <img class="image-top" src="high2.png" alt="" />
-            <div class="vertical-box">
-              <div class="vertical-title">
-                CBSE XIIth (2022) Maheshwari Public School
-              </div>
-              <div class="vertical-desc">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est,
-                culpa nemo magnam enim reprehenderit eos ab tenetur obcaecati
-                quo.
-              </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2022</div>
+            <div class="timeline-content">
+              <h3>XIIth CBSE</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Reiciendis voluptatum amet ex, voluptate, maxime sint explicabo
+                nesciunt, voluptas ut quaerat earum. Voluptas, ratione commodi?
+                Iure magnam nobis natus exercitationem ipsam.
+              </p>
             </div>
           </div>
 
-          <div class="vertical">
-            <img class="image-top" src="university.png" alt="" />
-            <div class="vertical-box">
-              <div class="vertical-title">
-                BTech CSE (2022-2026) JK Lakshmipat University
-              </div>
-              <div class="vertical-desc">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est,
-                culpa nemo magnam enim reprehenderit eos ab tenetur obcaecati
-                quo.
-              </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2020</div>
+            <div class="timeline-content">
+              <h3>Xth CBSE</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Reiciendis voluptatum amet ex, voluptate, maxime sint explicabo
+                nesciunt, voluptas ut quaerat earum. Voluptas, ratione commodi?
+                Iure magnam nobis natus exercitationem ipsam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="thirdsection" id="Skills">
+        <h1>Skills</h1>
+        <div class="skill-container">
+          <div class="skill-box">
+            <div class="skill-info">
+              <h3>Programming Languages</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Maiores, corporis laboriosam blanditiis velit itaque sit, quis,
+                repellendus eos quam aperiam molestias? Asperiores voluptatem
+                sint iste animi nesciunt fugit officiis eveniet.
+              </p>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <div class="skill-info">
+              <h3>Web Technologies</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Maiores, corporis laboriosam blanditiis velit itaque sit, quis,
+                repellendus eos quam aperiam molestias? Asperiores voluptatem
+                sint iste animi nesciunt fugit officiis eveniet.
+              </p>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <div class="skill-info">
+              <h3>Game Technologies</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Maiores, corporis laboriosam blanditiis velit itaque sit, quis,
+                repellendus eos quam aperiam molestias? Asperiores voluptatem
+                sint iste animi nesciunt fugit officiis eveniet.
+              </p>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <div class="skill-info">
+              <h3>Tools and Frameworks</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Maiores, corporis laboriosam blanditiis velit itaque sit, quis,
+                repellendus eos quam aperiam molestias? Asperiores voluptatem
+                sint iste animi nesciunt fugit officiis eveniet.
+              </p>
             </div>
           </div>
         </div>
