@@ -157,7 +157,6 @@
   top: -75px;
 } */
 
-
 * {
   margin: 0;
   padding: 0;
@@ -202,7 +201,7 @@ nav ul li a:hover {
   text-decoration: underline 2px;
   transition: 0.2s ease-in-out;
 }
-nav ul li a.home{
+nav ul li a.home {
   color: rgb(78, 194, 194);
   font-weight: 530;
 }
@@ -245,7 +244,7 @@ nav ul li a.home{
   border-radius: 1.4rem;
   font-size: 16px;
   transition: 0.25s ease-in-out;
-   box-shadow: 0 0 15px rgb(37, 84, 87), 0 0 20px rgb(25, 98, 103);
+  box-shadow: 0 0 15px rgb(37, 84, 87), 0 0 20px rgb(25, 98, 103);
 }
 .leftsection .btn1 {
   padding: 12px 18px;
@@ -329,7 +328,8 @@ footer {
   background-color: rgb(18, 21, 46);
   height: 160px;
   border-radius: 3rem;
-  border: 5px solid transparent;
+  border: 2px solid teal;
+  box-shadow: 0 0 10px rgb(31, 89, 100);
   cursor: pointer;
   transition: 0.4s ease-in-out;
 }
@@ -473,42 +473,61 @@ footer {
   width: 50px;
 }
 
-.contact{
-  background-color: rgb(18, 21, 46);
+.contact {
+  background-color: rgb(2, 2, 42);
+  padding-bottom: 100px;
+  padding-top: 50px;
 }
-.contact h1{
+.contact h1 {
   font-size: 1.9rem;
   margin-bottom: 4rem;
   text-align: center;
 }
-.contact form{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 3rem;
-  margin: 4rem auto;
-  text-align: center;
-}
 
-.contact form .input-box{
+.form-container {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
   flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto;
 }
-.contact form .input-box input,
-.contact form textarea{
-  width: 80%;
-  padding: 2.5rem;
-  font-size: 1.8rem; 
-  color: rgb(17, 27, 36);
-  background-color: rgb(18, 21, 46);
-  border-radius: 2rem;
+
+.form-left,
+.form-right {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-left input,
+.form-right textarea {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 1.2rem;
   border: 2px solid teal;
-  margin: 1.4rem 0;
-  resize: none;
+  background-color: rgb(18, 21, 46);
+  color: white;
+  box-sizing: border-box;
 }
 
-.contact form .btn{
-  margin-top: 2rem;
+.form-right .btn1 {
+  align-self: flex-start;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 1.2rem;
+  background-color: teal;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .form-left,
+  .form-right {
+    flex: 1 1 100%;
+  }
+}
