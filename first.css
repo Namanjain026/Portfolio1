@@ -116,7 +116,7 @@ nav ul li a.home {
   font-size: 16px;
   box-shadow: 0 0 15px rgb(37, 84, 87), 0 0 20px rgb(25, 98, 103);
 }
-.btn{
+.btn {
   padding: 9px 18px;
   background-color: rgb(32, 143, 136);
   color: aliceblue;
@@ -125,7 +125,7 @@ nav ul li a.home {
   border-radius: 1.4rem;
   font-size: 16px;
 }
-.btn:hover{
+.btn:hover {
   scale: 1.08;
   padding: 9px 18px;
   background-color: rgb(32, 143, 116);
@@ -259,11 +259,10 @@ footer {
   .skill-info p {
     font-size: 0.95rem;
     line-height: 1.5;
-    max-height: none;   /* ensure no clipping */
-    overflow: visible;  /* make sure nothing is hidden */
+    max-height: none; /* ensure no clipping */
+    overflow: visible; /* make sure nothing is hidden */
   }
 }
-
 
 .education h1 {
   font-size: 1.9rem;
@@ -535,28 +534,28 @@ footer {
   }
 }
 
-.projects{
+.projects {
   background-color: rgb(2, 2, 42);
   padding-top: 70px;
   padding-bottom: 200px;
 }
-.projects h1{
+.projects h1 {
   font-size: 1.9rem;
   margin-bottom: 4rem;
   text-align: center;
 }
-.project-box{
+.project-box {
   padding: 0 30px;
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   place-items: center;
   gap: 3rem;
-  row-gap: 4rem
+  row-gap: 4rem;
 }
 
-.project-card{
+.project-card {
   max-width: 600px;
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -572,13 +571,13 @@ footer {
   transition: 0.3s ease;
 }
 
-.project-card:hover{
+.project-card:hover {
   box-shadow: 0 0 25px teal, 0 0 50px teal;
   scale: 1.03;
 }
 .project-card img {
   width: 100%;
-  max-width: 400px; 
+  max-width: 400px;
   max-height: 200px;
   height: auto;
   border-radius: 1em;
@@ -589,4 +588,44 @@ footer {
 }
 .project-card p {
   font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .firstsection {
+    flex-direction: column;
+    margin: 80px 20px;
+    padding-top: 60px;
+    gap: 2rem;
+  }
+
+  .firstsection > div {
+    width: 100%;
+    margin: 0;
+  }
+
+  .leftsection {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+
+  .leftsection .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .btn1,
+  .btn2 {
+    width: 40%;
+    text-align: center;
+  }
+
+  .rightsection img {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
 }
